@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>聊天室</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link href="css/wechat.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="main">
+    <div class="main_inner clearfix">
+        <div class="panel"></div>
+        <div id="chatArea" class="box chat">
+            <div class="box_hd"></div>
+            <div class="box_bd" id="messageList">
+
+            </div>
+            <div class="box_ft">
+                <div class="box_ft_bd hide">
+                    <div class="emoji_panel">
+                        <ul class="exp_hd">
+                            <li class="exp_hd_item active" data-i="0">
+                                <a href="javascript:;">QQ表情</a>
+                            </li>
+                            <!--<li class="exp_hd_item" data-i="1">-->
+                            <!--<a href="javascript:;">符号表情</a>-->
+                            <!--</li>-->
+                            <!--<li class="exp_hd_item" data-i="2">-->
+                            <!--<a href="javascript:;">动画表情</a>-->
+                            <!--</li>-->
+                        </ul>
+                        <div class="exp_bd">
+                            <div class="exp_cont active" id="faceList"></div>
+                            <div class="exp_cont emoji_face"></div>
+                            <div class="exp_cont tuzki_face"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_ft_hd">
+                    <div class="eaitWrap">
+                        <pre id="editArea" class="editArea" contenteditable="true"></pre>
+                    </div>
+                    <input type="file" id="imageFile" accept="image/*" style="display: none">
+                    <a href="javascript:" class="web_wechat_face" id="web_wechat_face"></a>
+                    <label for="imageFile" class="web_wechat_pic" id="web_wechat_pic"></label>
+                    <a href="javascript:" class="btn btn_send" id="btn_send">发送</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/weixin.js"></script>
+<script src="js/long.min.js"></script>
+<!-- https://raw.github.com/dcodeIO/Long.js/master/dist/Long.min.js -->
+<script src="js/bytebuffer.min.js"></script>
+<!-- https://raw.github.com/dcodeIO/ByteBuffer.js/master/dist/ByteBufferAB.min.js -->
+<script src="js/protobuf.min.js"></script>
+<!-- https://raw.github.com/dcodeIO/ProtoBuf.js/master/dist/ProtoBuf.min.js -->
+<script src="js/chat.js"></script>
+<script src="js/socket.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>  

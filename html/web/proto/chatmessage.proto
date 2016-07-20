@@ -1,0 +1,27 @@
+message ChatMessage {
+    //消息类型 0-普通消息/回复消息 1-系统消息  2-加入群组 3-离开群组
+    optional int32 action = 1;
+    //"S-" + UUID.randomUUID() 系统消息
+    //"U-{userId}-{groupId}-"+UUID.randomUUID() 用户消息
+    optional string uuid = 2;
+    //用户ID
+    optional string userId = 3;
+    //群组ID
+    optional string groupId = 4;
+    //昵称
+    optional string nickname = 5;
+    //用户头像
+    optional string pic = 6;
+    //消息文字内容
+    optional string content = 7;
+    //图片
+    optional string pictures = 8;
+    //视频
+    optional string videos = 9;
+    //音频
+    optional string audios = 10;
+    //消息发送时间
+    optional int64 timestamp = 11;
+    //回复消息内容 同消息
+    optional ChatMessage reply = 12;
+}
